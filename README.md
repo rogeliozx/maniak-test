@@ -18,7 +18,7 @@ http://localhost:3000
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+las herramientas utilizasdas en el proyeto
 
 * [Material-UI](https://material-ui.com) - Libreria con interfaces
 * [Bulma Css](https://bulma.io) - Para mas estilos en la pagina
@@ -46,5 +46,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Expresiones de Gratitud 🎁
 Muchas grecias al equipo Maniak por darme la oportunidad de aplicar con este prueba.
-
 
