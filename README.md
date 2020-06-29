@@ -11,7 +11,7 @@ yarn install
 ```
 Despues se procede a abrir en el navegador 
 
-``
+```
 http://localhost:3000
 ```
 
