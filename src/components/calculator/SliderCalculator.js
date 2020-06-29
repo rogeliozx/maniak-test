@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import Slider from '@material-ui/core/Slider';
 import GroupIcon from '@material-ui/icons/Group';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
@@ -12,7 +13,7 @@ const styleSlider = {
 };
 const SliderCalculator = (props) => {
   const { calculate } = props;
-  const [value, setValue] = useState(props.min);
+  const [value, setValue] = useState(props.min ? props.min : 0);
   useEffect(() => {
     calculate(value);
   }, [value, calculate]);
@@ -74,5 +75,11 @@ const SliderCalculator = (props) => {
     </div>
   );
 };
-
+SliderCalculator.propTypes = {
+  calculate: PropTypes.func.isRequired,
+  min: PropTypes.number,
+  max: PropTypes.number,
+  style: PropTypes.object,
+  money: PropTypes.any,
+};
 export default SliderCalculator;

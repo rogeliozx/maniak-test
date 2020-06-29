@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 const ProducDesc = (props) => {
   const descStyle = {
     container: {
@@ -21,5 +22,10 @@ const ProducDesc = (props) => {
     </div>
   );
 };
-
+ProducDesc.propTypes = {
+  container: PropTypes.object,
+  descStyle:PropTypes.object,
+  style:PropTypes.object,
+  children:PropTypes.string.isRequired
+};
 export default ProducDesc;

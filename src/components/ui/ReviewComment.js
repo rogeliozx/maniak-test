@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 const ReviewComment = (props) => {
   const titleStyle = {
     fontWeight: 'bold',
@@ -12,5 +13,7 @@ const ReviewComment = (props) => {
     </Fragment>
   );
 };
-
+ReviewComment.propTypes = {
+  children: PropTypes.string.isRequired,
+};
 export default ReviewComment;

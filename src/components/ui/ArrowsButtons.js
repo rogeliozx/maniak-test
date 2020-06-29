@@ -3,6 +3,7 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import Button from '@material-ui/core/Button';
 import Colors from '../../constants/Colors';
+import PropTypes from 'prop-types';
 const ArrowsButtons = (props) => {
   const {operation}=props;
     const styleArrow={
@@ -33,6 +34,13 @@ const ArrowsButtons = (props) => {
       <Arrow style={{...styleArrow.arrow,...props.arrowStyle}}/>
     </Button>
   );
+};
+
+ArrowsButtons.propTypes = {
+  operation: PropTypes.func.isRequired,
+  arrow: PropTypes.string,
+  style:PropTypes.object,
+  arrowStyle:PropTypes.object,
 };
 
 export default ArrowsButtons;

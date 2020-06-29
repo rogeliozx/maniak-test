@@ -1,21 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Logo from '../../assets/bellotero.svg';
 import { Link, NavLink } from 'react-router-dom';
+import navbarStyle from '../../constants/navbarStyle';
+
 const Navbar = ({ menu }) => {
-  const navbarStyle = {
-    brand: {
-      marginLeft: '6rem',
-    },
-    items: {
-      margin: '0 auto',
-    },
-    itemsLink: {
-      fontWeight: '500',
-      marginRight: '4rem',
-      color: '#071eb3',
-      fontFamily: 'Roboto',
-    },
-  };
   return (
     <nav className='navbar' role='navigation' aria-label='main navigation'>
       <div className='navbar-brand' style={navbarStyle.brand}>
@@ -42,5 +31,8 @@ const Navbar = ({ menu }) => {
       </div>
     </nav>
   );
+};
+Navbar.propTypes = {
+  menu: PropTypes.object.isRequired,
 };
 export default Navbar;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 const Description = (props) => {
   const descStyle = {
     container: {
@@ -22,5 +23,9 @@ const Description = (props) => {
     </div>
   );
 };
-
+Description.propTypes = {
+  children: PropTypes.string.isRequired,
+  style: PropTypes.object,
+  descStyle: PropTypes.object,
+};
 export default Description;

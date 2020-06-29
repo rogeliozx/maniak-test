@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 const Title = (props) => {
   const titleStyle = {
     backgroundColor: '#071eb3',
@@ -21,5 +22,10 @@ const Title = (props) => {
     </div>
   );
 };
-
+Title.propTypes = {
+  children: PropTypes.string.isRequired,
+  size: PropTypes.number,
+  style: PropTypes.object,
+  titleStyle: PropTypes.object,
+};
 export default Title;

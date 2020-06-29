@@ -1,6 +1,7 @@
 import React from 'react';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import Colors from '../../constants/Colors';
+import PropTypes from 'prop-types';
 
 const amountStyles = {
   container: {
@@ -44,5 +45,8 @@ const Amount = (props) => {
     </div>
   );
 };
-
+Amount.propTypes = {
+  children: PropTypes.any.isRequired,
+  textColor: PropTypes.object,
+};
 export default Amount;

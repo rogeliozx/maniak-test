@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 const ReviewPerson = (props) => {
   const titleStyle = {
     name: {
@@ -28,5 +29,11 @@ const ReviewPerson = (props) => {
     </div>
   );
 };
-
+ReviewPerson.propTypes = {
+  position: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  style: PropTypes.object,
+  positionStyle: PropTypes.object,
+  nameStyle: PropTypes.object,
+};
 export default ReviewPerson;
