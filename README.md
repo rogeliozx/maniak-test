@@ -3,6 +3,7 @@
 Este es una prueba de Maniak creando una pagina con una calculadora de gastos.
 
 ### Instalación 🔧
+Redux dev tools esta disponible para el uso en el codigo
 
 Primero se necesita instalar las dependencias
 
