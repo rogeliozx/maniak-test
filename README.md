@@ -32,6 +32,7 @@ las herramientas utilizasdas en el proyeto
 * Reducir mas las views a componentes
 * Aplicar Ducks con redux
 * Volverlo mas responsivo para moviles
+* Crear un seccion we work in that para las paginas sin informacion
 
 ## Licencia 📄
 
