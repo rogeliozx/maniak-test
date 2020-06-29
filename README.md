@@ -27,10 +27,10 @@ las herramientas utilizasdas en el proyeto
 
 
 ## Planes futuros 📌
-1.Meter mas pruebas unitarias y mas coverage del codigo
-2.Reducir mas las views a componentes
-3.Aplicar Ducks con redux
-4.Volverlo mas responsivo para moviles
+* Meter mas pruebas unitarias y mas coverage del codigo
+* Reducir mas las views a componentes
+* Aplicar Ducks con redux
+* Volverlo mas responsivo para moviles
 
 ## Licencia 📄
 
