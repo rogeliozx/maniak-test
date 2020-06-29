@@ -5,9 +5,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#f9faff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  font-family: 'Roboto' !important;
+  font-weight: 500 !important;
+  font-size: 4rem !important;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  font-family: 'Roboto' !important;
+  font-weight: 500 !important;
+  font-size: 1.1rem !important;
+}
+.active {
+  border-top: 4px solid blue;
+
 }
