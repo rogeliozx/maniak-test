@@ -1,68 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pokedex
 
-## Available Scripts
+Este proyecto es una pokedex que guarda los pokemon en un storage del entrenador que le es asignado
 
-In the project directory, you can run:
+## Demo Respositorio
+[Pokedex funciona con redux dev tools](https://eloquent-yalow-875e36.netlify.com)<br>
+[Pokedex uso comun](https://upbeat-raman-7b0527.netlify.com)<br>
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Instalación 🔧
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Primero se necesita instalar las dependencias
 
-### `yarn test`
+```
+npm install
+```
+Despues se procede a instalar json-server preferencia manera global
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm install -g json-server
+```
 
-### `yarn build`
+Despues de procede a correr dentro del proyecto json-server en el puerto 4000
+dado las peticiones axios se encuentran en ese puerto
+```
+json-server --watch db.json --port 4000
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para iniciar sesion 
+```
+Usuario: red
+Password:pikachu
+```
+Para agregar un pokemon se procesede ir a pokedex selecionar por un numero un pokemon
+y clickear el boton azul grande.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### estilo de codificación ⌨️
+se instalo eslint con la guia de estilos [Airbnb React](https://github.com/airbnb/javascript/tree/master/react#class-vs-reactcreateclass-vs-stateless)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Construido con 🛠️
 
-### `yarn eject`
+_Menciona las herramientas que utilizaste para crear tu proyecto_
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [React](https://reactjs.org/docs/getting-started.html) - La libreria Usada
+* [Json Server](https://github.com/typicode/json-server) - Fake Api
+* [Pokemon Font](https://github.com/Superpencil/pokemon-font) - Para el tipo de font del pokemon red
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Planes futuros 📌
+Planeo mejorar la aplicacion agregandole un back-end con node.js para tener un mejor control de usuarios,
+ademas mejorar el el diseño de la applicacion,
+agregar mejores validaciones de datos,
+animaciones de carga,
+mejorar la estructura de redux del proyecto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Licencia 📄
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The MIT License (MIT)
 
-## Learn More
+Copyright (c) 2015 Chris Kibble
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### Code Splitting
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Expresiones de Gratitud 🎁
+Muchas grecias a todos por darme la oportunidad de aplicar con este proyecto.
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
